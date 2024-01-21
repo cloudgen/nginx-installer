@@ -630,7 +630,7 @@ class AppBase(object):
             if isinstance(command, basestring):
                 cmd = command
             elif isinstance(command, list):
-                cmd = " ".join(cmd)
+                cmd = " ".join(command)
             else:
                 cmd = ""
             if cmd.startswith("# **"):
@@ -3751,5 +3751,5 @@ class OnlineInstaller(AppBase):
 
 if __name__ == "__main__":
     app = OnlineInstaller(__file__)
-    app.setInstallation(appName='nginx-installer', author='Cloudgen Wong', homepage="https://github.com/cloudgen/nginx-installer",downloadUrl="https://dl.leolio.page/nginx-installer",lastUpdate='2024-1-15',majorVersion=13,minorVersion=15)
+    app.setInstallation(appName='nginx-installer', author='Cloudgen Wong', homepage="https://github.com/cloudgen/nginx-installer",downloadUrl="https://dl.leolio.page/nginx-installer",lastUpdate='2024-1-21',majorVersion=13,minorVersion=21)
     app.start()
