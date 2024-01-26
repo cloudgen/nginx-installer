@@ -3730,5 +3730,5 @@ class OnlineInstaller(AppBase):
 
 if __name__ == "__main__":
     app = OnlineInstaller(__file__)
-    app.setInstallation(appName='nginx-installer', author='Cloudgen Wong', homepage="https://github.com/cloudgen/nginx-installer",downloadUrl="https://dl.leolio.page/nginx-installer",lastUpdate='2024-1-21',majorVersion=13,minorVersion=21)
+    app.setInstallation(appName='nginx-installer', author='Cloudgen Wong', homepage="https://github.com/cloudgen/nginx-installer",downloadUrl="https://dl.leolio.page/nginx-installer",lastUpdate='2024-1-26',majorVersion=13,minorVersion=26)
     app.start()
