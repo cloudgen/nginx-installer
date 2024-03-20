@@ -2779,7 +2779,7 @@ class Temp(Shell):
         return ""
 
 class AppBase(Installer, AppPara, Ask, ShellProfile, FromPipe, AppMsg, Curl, Temp):
-    VERSION="1.9"
+    VERSION="1.10"
 
     __here__ = __file__
 
@@ -3349,9 +3349,11 @@ class AppBase(Installer, AppPara, Ask, ShellProfile, FromPipe, AppMsg, Curl, Tem
                     self.check_update()
                     return True
                 elif self.allowDisplayInfo():
+                    print("2")
                     self.msg_info(usage)
                     return True
             elif self.allowDisplayInfo():
+                print("1")
                 self.msg_info(usage)
                 return True
         if self.allowSelfInstall():
@@ -3713,6 +3715,8 @@ class AppBase(Installer, AppPara, Ask, ShellProfile, FromPipe, AppMsg, Curl, Tem
     def __init__(self, this = None):
         if this is not None:
             self.this(this)
+        else:
+            self.this(__file__)
 
 class OnlineInstaller(AppBase):
 
